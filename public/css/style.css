@@ -1,0 +1,270 @@
+body{
+	width: 100%;
+	padding: 0;	
+	margin: 0 auto;
+	background: rgba(200,230,230,200);
+}
+.right{
+	float:right;
+	width:50%;
+	line-height: 30px;
+	font-family: sans-serif;
+}
+.left{
+	/*background: rgba(5,10,10,255);*/
+	float: left;
+	width: 50%;
+}
+form
+{
+	display: none;
+	font-family: sans-serif;
+}
+.linkForm{
+	border:1px solid #404040;
+	width:280px;
+	padding:10px;
+	padding-left: 10px;
+	margin:10px 0 0 10px;
+	background-color: #faebd7;
+	line-height: 25px;
+}
+
+.border{
+	border:2px solid #363636;
+	border-radius: 3px;
+}
+.input-width{
+	width:190px;
+}
+.position a:link, .position a:visited{
+	height: 100%;
+	width:100%;
+	font-size: 22px;
+	display: inline-block;
+	color:#000;
+	text-align: center;
+	padding: 0 5px 0 2px;
+	transition-duration: 0.5s;
+}
+.position {
+	border-color: rgba(0,0,255,1);
+	position: relative;
+	float:left;
+	height: 58px;
+	margin: 3px;
+	margin-right: 1px;
+	background-color: #FFFFDD;
+	cursor: pointer;
+}
+.position:hover{
+	background-color:#CBC0DC;
+	transition-duration: 0.3s;
+}
+a
+{
+	text-decoration: none;
+	width:100%;
+	height:100%;
+}
+select
+{
+	width:95px;
+	font-size: 18px;
+	height: 30px;
+}
+.containerz{
+	width:500px;
+	list-style: none;
+	margin: 0 auto;
+}
+ul li
+{
+	padding: 0 auto;
+	float:left;
+	display:inline;
+	position: relative;
+}
+.selects{
+	float:left;
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.close 
+{
+	border-radius: 50%;
+  padding: 0 all;
+  margin-right: 2px;
+  width:10px;
+  height:10px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  cursor: pointer;
+  background-color: rgba(255,0,0,255);
+}
+.close:hover
+{
+	background-color: rgba(255,0,196,255);
+}
+.edit 
+{
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-right: 2px;
+  padding: 0 all;
+  width:10px;
+  height:10px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  cursor: pointer;
+  background: green;
+}
+.edit:hover
+{
+	background-color: rgba(0,255,0,255);
+}
+button
+{
+	height: 30px;
+	font-size: 18px;
+	box-shadow : none;
+	border : 1px solid black;
+	border-radius : 2px;
+	cursor:pointer;
+}
+input
+{
+	height:30px;
+	font-size: 18px;
+}
+.deleteUpdate
+{
+	background-color: #ff9966;
+	padding: 0 2px 0 2px;
+}
+#myModal, #myModal2 {
+	display:none;
+	position:fixed;
+	z-index:1;
+	left:0;
+	top:0;
+	width:100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+	background-color: #ffffdd;
+	margin: 10px auto;
+	padding:0;
+	border:1px solid green;
+	width:81%;
+	height: 100%;
+	border-radius: 10px;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+.close-modal{
+	color:#aaa;
+	float:right;
+	font-size:28px;
+	font-weight: bold;
+}
+.close-modal:hover, .close-modal:focus{
+	color:black;
+	text-decoration: none;
+	cursor:pointer;
+}
+.editRightPart li{
+	padding: 0 auto;
+	float:left;
+	display:inline;
+	border:1px solid black;
+	margin:5px 5px;
+	width:130px;
+	height:60px;
+	/* overflow: auto; */
+	
+	border-radius: 5px;
+	cursor:pointer;
+	font-family: sans-serif;
+}
+.editRightPart li a:link
+{
+	color:black;
+	display: block;
+	height: 100%;
+	position:relative;
+}
+.editRightPart li a:visited
+{
+	color:black;
+}
+.editRightPart li a button
+{
+	width:100%;
+	height:100%;
+	background: #FFCCE5;
+	overflow: hidden;
+}
+.editRightPart li span
+{
+	position:absolute;
+	top:-5px;
+	left:131px;
+	margin:0;
+	padding: 0;
+}
+.editRightPart ul
+{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0 0 0 10px;
+}
+
+.container
+{
+	clear:left;
+}
+nav ul li button
+{
+	background-color: rgb(253,207,207);
+	margin:0 5px 0 0;
+}
+li a img
+{
+	margin:0;
+	padding: 0;
+	position: absolute;
+	left:0;
+	top:0;
+	width:40px;
+	height:40px;
+}
+li a p
+{
+	padding: 0;
+	margin-top: 40px;
+	font-size: 16px;
+	bottom: 0;
+}
+.modalA span
+{
+	top:-5px;
+	left:128px;
+	position:absolute;
+}
+.modalA span:hover
+{
+	background-color: black;
+}
+
