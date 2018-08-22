@@ -38,13 +38,28 @@
 				exit();
 			}
 		}
+		/**============================================================== */
 		public function addPopular()
 		{
 			if(!empty(trim($_POST['name'])) && !empty(trim($_POST['link'])))
-{
-		$url = $_POST['link'];
-	function downFavIcon($url)
+		{
+			$url = $_POST['link'];
+			function downFavIcon($url)
 	{
+		/**
+		* 1)Решить проблему с выкидыванием ошибки в случае если не может * найти иконку.
+		*	2) Сделать проверку на существование файла в папке с иконками
+		* 	3) Узнать возможно ли грузануть иконку без cURL
+		*/
+		$url = parse_url($url);
+		$host = $url['host'];
+		$picture_name = $host; 
+		$url = $url['scheme'].'://'.$url['host'];
+		$name = 'public/img/'.$host;
+		$host = file_exists("$name.ico") ? "$host.ico":(file_exists("$name.png")?"$host.png":false);
+		
+		if($host){return $host;}
+		else{
 		$doc = new DOMDocument();
 		$doc->strictErrorChecking = FALSE;
 		@$doc->loadHTML(file_get_contents($url));
@@ -54,26 +69,10 @@
 		{
 			$arr = $xml->xpath('//link[@rel="icon"]');
 		}
+		
+		
 		$path = ''.$arr[0]['href'];
 
-		$url = parse_url($url);
-		$host = $url['host'];
-		$url = $url['scheme'].'://'.$url['host'];
-		/*if(substr($url['host'], -3) === 'net')
-		{
-			$url = $url['scheme'].'://'.$url['host'];
-		}
-		else
-	{
-		if(substr($url['host'],0,4) === 'www.') 
-		{
-			$url = $url['scheme'].'://'.$url['host'];
-		}
-		else
-		{
-			$url = $url['scheme'].'://www.'.$url['host'];
-		}
-	}*/ 
 		if(substr($path,0,4) === 'http')
 		{
 			//echo 'here';
@@ -90,11 +89,13 @@
 		{
 			$path = $url.'/'.$path;
 		}
-		/*echo '<pre>';
-		var_dump($path); die();*/
-		
-		$name = 'public/img/'.$host.'.ico';
-
+		/** 
+		 * Name of a picture
+		 */
+		$picture_name = $picture_name.".".substr($path,-3);
+		$name = "public/img/$picture_name";
+		//echo '<pre>'; var_dump($path);die();
+				
 		$ch = curl_init($path);
 		$fp = fopen($name, 'wb');
 		curl_setopt($ch, CURLOPT_FILE, $fp);
@@ -102,16 +103,16 @@
 		curl_exec($ch);
 		curl_close($ch);
 		fclose($fp);
-		return $host.'.ico';
-	}
+		return $picture_name;}}
+
 	$img = downFavIcon($url);
 
 	$name = str_replace(' ', '_', $_POST['name']);
 	$this->insert('popular',['name' => $name,'link' => $_POST['link'],'img'=>$img]);
 	header("Location:../..");
-	exit();
+	exit();}
 }
-		}
+		
 		public function addLink()
 		{
 			if(!empty(trim($_POST['description'])) && !empty(trim($_POST['link'])))
@@ -127,4 +128,5 @@
 				//$theme_id[0]->id
 			}
 		}
-	}
+	
+}
