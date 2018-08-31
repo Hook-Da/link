@@ -66,7 +66,7 @@
 	foreach ($popularLinks as $link => $value) 
 	{
 		$valueName = str_replace('_', ' ', $value->name);
-		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="',URL,'public/img/'.$value->img.'"><p>',$valueName,'</p></a><span class="close"></span><span class="edit"></span></li></div>';
+		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="',URL,'public/img/'.$value->img.'"><p><h6>',$valueName,'</h6></p></a><span class="close"></span><span class="edit"></span></li></div>';
 	}
 
 ?>	

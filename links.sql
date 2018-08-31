@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 12, 2018 at 12:02 PM
--- Server version: 5.6.34
--- PHP Version: 7.1.0
+-- Generation Time: Aug 31, 2018 at 12:14 AM
+-- Server version: 5.7.19
+-- PHP Version: 7.0.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -90,7 +92,19 @@ INSERT INTO `links` (`id`, `user_id`, `theme`, `description`, `link`, `theme_id`
 (51, NULL, 'JavaScript', 'chess engine in pure JS', 'https://www.youtube.com/watch?v=2eA0bD3wV3Q&list=PLZ1QII7yudbe4gz2gh9BCI6VDA-xafLog', 4),
 (52, NULL, 'php', '1c bitrix', 'https://www.youtube.com/watch?v=4pawCupacWo&list=PLY4rE9dstrJyqAWUVlT7PLGjdmPEwhfg6', 1),
 (53, NULL, 'chess', 'Французская защита Вариант Тарраша', 'https://www.chess.com/blog/HeavenlyTiger/izuchaem-frantsuzskuiu-zashchitu-variant-tarrasha', 3),
-(54, NULL, 'chess', 'Французкая защита разменный вариант', 'http://chesswood.ru/debyuty/poluotkrytye/francuzskaya-zashhita.html', 3);
+(54, NULL, 'chess', 'Французкая защита разменный вариант', 'http://chesswood.ru/debyuty/poluotkrytye/francuzskaya-zashhita.html', 3),
+(55, NULL, 'SQL', 'Sql Tutorials', 'https://www.w3schools.com/sql/sql_and_or.asp', 15),
+(56, NULL, 'chess', 'Франц.защита вариант Нимцовича', 'https://www.youtube.com/watch?time_continue=3&v=iJZpfL_u49I', 3),
+(57, NULL, 'Git', 'Git lessons', 'https://www.youtube.com/watch?v=K9fkejaywBM&list=PLmRNNqEA7JoM77hOJkPrLOfJQGizCLR3P&index=2', 16),
+(58, NULL, 'ECMA', 'Reference type', 'https://tc39.github.io/ecma262/#sec-reference-specification-type', 17),
+(59, NULL, 'Photoshop', '200 lessons', 'https://www.youtube.com/watch?v=givuYd_cKm0&list=PL6gx4Cwl9DGD25IGk9Xf7oC3wiT9gC75x', 18),
+(60, NULL, 'My Project', 'How to clone all remote branches in Git?', 'https://stackoverflow.com/questions/67699/how-to-clone-all-remote-branches-in-git', 19),
+(61, NULL, 'My Project', 'Header to get and post Request', 'http://masteringionic.com/blog/2016-12-18-parsing-xml-csv-and-tsv-files-with-ionic/', 19),
+(62, NULL, 'My Project', 'Responsive css background images', 'https://stackoverflow.com/questions/12609110/responsive-css-background-images', 19),
+(63, NULL, 'My Project', 'Creating a Music Player Interface in Ionic 2 & 3', 'https://www.joshmorony.com/creating-a-music-player-interface-in-ionic-2/', 19),
+(64, NULL, 'My Project', 'How to design circle progress bar in ionic ', 'https://stackoverflow.com/questions/45735895/how-to-design-circle-progress-bar-in-ionic-3', 19),
+(65, NULL, 'My Project', 'Beautifully crafted open source icons', 'https://ionicons.com/', 19),
+(66, NULL, 'My Project', 'Open & Download PDF Files with Ionic', 'https://www.youtube.com/watch?v=kM4cCQn8Bz4&list=PLNFwX8PVq5q5SuSRwwEunXLuz6ZBzz6YG', 19);
 
 -- --------------------------------------------------------
 
@@ -117,10 +131,8 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (21, 'https://vk.com/', 'В контакте', 'vk.com.ico'),
 (22, 'https://www.facebook.com/', 'Facebook', 'static.xx.fbcdn.net.ico'),
 (23, 'https://www.google.ru/search?q=took+%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4&ie=utf-8&oe=utf-8&gws_rd=cr&ei=tXJvWcb3B4iv6AS__5eoDA', 'Vocab-GooGLe', 'google.ico'),
-(24, 'https://putlocker7.live/watch/featured-movies', 'Putlocker', 'putlocker7.live.ico'),
 (27, 'https://mail.ru/', 'Mail.ru', 'mail.ico'),
 (28, 'https://duckduckgo.com/', 'Duck-Duck', 'duckduckgo.com.ico'),
-(29, 'https://thepiratebay.org/', 'PirateBay', 'proxybay.bz.ico'),
 (32, 'https://www.rapidtables.com/web/color/RGB_Color.html', 'RGB', 'www.rapidtables.com.ico'),
 (33, 'https://p5js.org/reference/', 'p5.js reference', 'p5js.org.ico'),
 (79, 'https://ufa.hh.ru/', 'HeadHunt', 'hh.png'),
@@ -139,13 +151,11 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (116, 'https://www.indir.vip/guncell-eset-smart-nod32-mobil-premium-serial-key-2018.html', 'keys_Nod32', 'www.indir.vip.ico'),
 (118, 'https://jsfiddle.net/', 'JsFiddle', 'jsfiddle.net.ico'),
 (121, 'http://php.net/manual/ru/function.substr.php', 'substr_fn', 'php.net.ico'),
-(123, 'https://www.livejournal.com/', 'lifeJournal', 'www.livejournal.com.ico'),
 (124, 'https://html.spec.whatwg.org/multipage/input.html#htmlinputelement', 'HTML_Standart', 'html.spec.whatwg.org.ico'),
 (125, 'http://w3c.github.io/html-reference/elements.html', 'HTML_Elements', 'w3c.github.io.ico'),
 (127, 'http://huzlek.bashqort.com/index.php?id=home', 'Башкирский', 'huzlek.bashqort.com.ico'),
 (128, 'https://www1.putlockerfit.net/', 'New_Putlocker', 'www1.putlockerfit.net.ico'),
 (129, 'https://thekickasstorrents.com/', 'torrent_kick_', 'thekickasstorrents.com.ico'),
-(132, 'https://wikium.ru/', 'training', 'wikium.ru.ico'),
 (133, 'https://www.youtube.com/watch?v=-3u3pJaf2V8', 'Turkish', 'www.youtube.com.ico'),
 (138, 'https://unblocked.vet/', 'torrent_sites', 'unblocked.vet.ico'),
 (139, 'https://learn.javascript.ru/document', 'Продолжить', 'learn.javascript.ru.ico'),
@@ -153,7 +163,42 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (142, 'https://www.ibm.com/developerworks/ru/library/x-xpathphp/index.html', 'XpaTh_with_Php', 'www.ibm.com.ico'),
 (143, 'https://www.youtube.com/watch?v=z1xtFbO9jgQ&list=PLRd0zhQj3CBmusDbBzFgg3H20VxLx2mkF', 'Yii_tutorials', 'www.youtube.com.ico'),
 (144, 'https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa', 'Vue.js', 'www.youtube.com.ico'),
-(145, 'https://codecourse.com/', 'Alex_Garett', 'codecourse.com.ico');
+(145, 'https://codecourse.com/', 'Alex_Garett', 'codecourse.com.ico'),
+(146, 'https://evilinside.ru/parsing-s-pomoshhyu-domcrawler-v-laravel-5-6/', 'парсинг_сайта_с_помощью_Laravel', 'evilinside.ru.ico'),
+(147, 'https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w', 'Academind', 'www.youtube.com.ico'),
+(148, 'https://www.youtube.com/watch?v=XTSc2mPF4II', 'WireShark', 'www.youtube.com.ico'),
+(149, 'https://www.youtube.com/watch?v=V5vhPqVYK38', '24/7_Turkish', 'www.youtube.com.ico'),
+(150, 'https://1chess.org/#/id224090998', 'france', '1chess.org.ico'),
+(151, 'https://vse10.ru/main/', 'Trauner-Rus', 'vse10.ru.ico'),
+(152, 'https://www.ratatype.com/u850128/?new_registered#_=_', 'Trainer-Eng', 'www.ratatype.com.ico'),
+(153, 'https://laravel.ru/docs/v5/eloquent-relationships', 'Отношения', 'laravel.ru.ico'),
+(154, 'https://github.com/Hook-Da', 'ГитХаб', 'github.com.ico'),
+(155, 'https://laravel.ru/docs/v5/eloquent', 'Eloquent', 'laravel.ru.ico'),
+(156, 'https://laravel.ru/docs/v5/queries', 'Конструктор_запросов_', 'laravel.ru.ico'),
+(157, 'https://laravel.ru/docs/v5/eloquent-collections#%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5', 'Collection._Available_methods._Eloquent', 'laravel.ru.ico'),
+(158, 'http://php.net/manual/ru/language.oop5.traits.php', 'Trait_php', 'php.net.ico'),
+(160, 'https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/record-collection', 'Просмотреть_еще_', 'learn.freecodecamp.org.ico'),
+(161, 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment', 'Destructuring_assignment', 'developer.mozilla.org.ico'),
+(162, 'https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=1', 'Angular', 'www.youtube.com.ico'),
+(163, 'https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU', 'TypeScript', 'www.youtube.com.ico'),
+(164, 'http://php.net/manual/ru/language.oop5.overloading.php', 'Reload_php', 'php.net.ico'),
+(165, 'https://code.visualstudio.com/', 'WindCodeEditor', 'code.visualstudio.com.ico'),
+(166, 'https://www.kinopoisk.ru/film/pakt-2011-615602/', 'The_pact', 'www.kinopoisk.ru.ico'),
+(167, 'https://habr.com/post/133363/', 'Angular_CLI', 'habr.com.ico'),
+(168, 'https://proglib.io/p/git-github-gitflow/', 'read_up', 'proglib.io.ico'),
+(171, 'https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html', 'Git-flow_tips', 'danielkummer.github.io.ico'),
+(172, 'https://2uit.flowlu.ru/feed', 'Flowlu', '2uit.flowlu.ru.ico'),
+(174, 'https://www.youtube.com/watch?v=TPtv3Sj87KE&list=PLvLBrJpVwC7piPgR6u165HAnr-2Z80etB', 'Ionic_tuts', 'www.youtube.com.ico'),
+(176, 'https://www.youtube.com/watch?v=sXFmkdhOEVc&list=PLvLBrJpVwC7piPgR6u165HAnr-2Z80etB&index=4', 'Hacking', 'www.youtube.com.ico'),
+(181, 'https://bitbucket.org/account/user/Hook_Banner/', 'BitBucket', 'bitbucket.org.png'),
+(182, 'https://www.youtube.com/watch?v=ruieT3Nkg2M', 'Commiting_changes', 'www.youtube.com.ico'),
+(183, 'https://www.youtube.com/watch?v=igJFPu6RrJ0&list=PLNFwX8PVq5q6CHLk0tLCiyh96nALzi3_x', 'Ionic_advanced_tuts', 'www.youtube.com.ico'),
+(184, 'https://ionicframework.com/docs/api/components/grid/Grid/', 'Ionic_doc', 'ionicframework.com.png'),
+(185, 'https://www.youtube.com/watch?v=ei7FsoXKPl0&list=PLuCVssMJ_UI0ERHV9C0UIAo7SJmRNOrrj', 'RxJS_Observable', 'www.youtube.com.ico'),
+(186, 'https://www.youtube.com/watch?v=g-DzyBv2Ndg&list=PLtKjv92L0ihD_Hre-d12JihnQ_BanTD7c', 'Ionic_67_tuts', 'www.youtube.com.ico'),
+(187, 'https://drive.google.com/drive/folders/18FiTdKnG0wAGBqQqn_e_TeqKtp31J6qr', 'Эскизы', 'drive.google.com.om/'),
+(188, 'https://www.joshmorony.com/sound-effects-using-html5-and-native-audio-in-ionic/', 'Tabs_and_Sounds', 'www.joshmorony.com.png'),
+(189, 'https://nodejs.org/dist/', 'NodeVersions', 'nodejs.org.png');
 
 -- --------------------------------------------------------
 
@@ -184,7 +229,12 @@ INSERT INTO `Themes` (`id`, `theme`) VALUES
 (11, 'Neural Network'),
 (12, 'The Coding Train'),
 (13, 'Another'),
-(14, 'CSS');
+(14, 'CSS'),
+(15, 'SQL'),
+(16, 'Git'),
+(17, 'ECMA'),
+(18, 'Photoshop'),
+(19, 'My Project');
 
 --
 -- Indexes for dumped tables
@@ -216,17 +266,18 @@ ALTER TABLE `Themes`
 -- AUTO_INCREMENT for table `links`
 --
 ALTER TABLE `links`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 --
 -- AUTO_INCREMENT for table `popular`
 --
 ALTER TABLE `popular`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
 --
 -- AUTO_INCREMENT for table `Themes`
 --
 ALTER TABLE `Themes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
