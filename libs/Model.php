@@ -18,6 +18,8 @@
 		}
 		$sql = "INSERT INTO `$table` (`".implode('`,`',$keys)."`) VALUES ({$values})";
 		//print_r($request); die();
+		
+		header("Location:http://localhost/link/");
 		return $this->execution($sql,$request);
 	}
 	public function select($table, $what, $param = null,$column = null)

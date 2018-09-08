@@ -34,7 +34,6 @@
 			if(!empty(trim($_POST['theme'])))
 			{
 				$this->insert('Themes',['theme'=>$_POST['theme']]);
-				header("Location:http://localhost/link");//////////////////////////////
 				exit();
 			}
 		}
@@ -109,8 +108,8 @@
 
 	$name = str_replace(' ', '_', $_POST['name']);
 	$this->insert('popular',['name' => $name,'link' => $_POST['link'],'img'=>$img]);
-	header("Location:http://localhost/link");
-	exit();}
+	exit();
+	}
 }
 		
 public function addLink()
@@ -122,7 +121,6 @@ public function addLink()
 		$link = $_POST['link'];
 		$theme_id = $this->select('Themes','*',$theme,'theme');
 		$this->insert('links',['theme'=>$theme,'description' => $description,'link'=>$link,'theme_id'=>$theme_id[0]->id]);
-		header("Location:http://localhost/link");
 		exit();
 	}
 }
