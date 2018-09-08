@@ -4,8 +4,10 @@ window.onload = function()
 	** xhr section
 	*/
 	let xhr = new XMLHttpRequest();
-	function get(dataObject)
+	let pathOfWebSite = window.location.href;
+	function get(dataObject)//////////////////////////////////////////////
 	{
+		console.log(dataObject.data);
 		if(dataObject.data !== undefined)
 		{
 			let dataToSend = dataObject.data;
@@ -78,8 +80,8 @@ window.onload = function()
 		}
 	}
 	/*
-	* EDIT SECTION
-	*/
+	*////////////////////////////////////////////////////////// EDIT SECTION
+	
 	let editSpan = document.querySelectorAll('.edit');
 	for(let i = 0; i < editSpan.length; i++)
 	{
@@ -91,10 +93,11 @@ window.onload = function()
 				{
 					let dataObject = 
 					{
-						page:'http://link/update/editSave/q?',
+						page: pathOfWebSite + '/update/editSave/q?',
 						data:this.parentElement.childNodes[0].childNodes[1].innerHTML,
 						linkName: linkName
 					};
+					console.log(dataObject);
 					this.parentElement.childNodes[0].childNodes[1].innerHTML = escapeHtml(linkName);
 					get(dataObject);
 				}
@@ -114,7 +117,7 @@ window.onload = function()
 	*/
 	//====================================================
 	/*
-	* DELETE SECTION
+	* ====================================================================DELETE SECTION
 	*/
 	let closeSpan = document.querySelectorAll('.close');
 	for(let i = 0; i < closeSpan.length; i++)
@@ -124,8 +127,10 @@ window.onload = function()
 				if(confirm('Are you sure you want to delete this link?'))
 				{
 					let dataObject = {};
-					dataObject.page = 'http://link/update/editDelete/' + this.parentElement.childNodes[0].childNodes[1].innerHTML.split(' ').join('_');
-					console.log(this.parentElement.childNodes[0].childNodes[1].innerHTML);
+					dataObject.page = pathOfWebSite + 'update/editDelete/' + this.parentElement.getElementsByTagName('h6')[0].innerHTML.split(' ').join('_');
+					console.log(window.location.hostname);// localhost
+					console.log(window.location.pathname); // /link/
+					console.log(window.location.href); // http://localhost/link/
 					this.parentElement.remove();
 					get(dataObject);
 				}
@@ -136,7 +141,7 @@ window.onload = function()
 			},false);
 	}
 	/*
-	* END OF DELETE SECTION
+	* ==========================================================END OF DELETE SECTION
 	*/
 	function escapeHtml(text) {
 		  var map = {

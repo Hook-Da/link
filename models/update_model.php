@@ -34,7 +34,7 @@
 			if(!empty(trim($_POST['theme'])))
 			{
 				$this->insert('Themes',['theme'=>$_POST['theme']]);
-				header("Location:../..");
+				header("Location:http://localhost/link");//////////////////////////////
 				exit();
 			}
 		}
@@ -109,24 +109,22 @@
 
 	$name = str_replace(' ', '_', $_POST['name']);
 	$this->insert('popular',['name' => $name,'link' => $_POST['link'],'img'=>$img]);
-	header("Location:../..");
+	header("Location:http://localhost/link");
 	exit();}
 }
 		
-		public function addLink()
-		{
-			if(!empty(trim($_POST['description'])) && !empty(trim($_POST['link'])))
-			{
-				$theme = $_POST['theme'];
-				$description = $_POST['description'];
-				$link = $_POST['link'];
-				$theme_id = $this->select('Themes','*',$theme,'theme');
-				$this->insert('links',['theme'=>$theme,'description' => $description,'link'=>$link,'theme_id'=>$theme_id[0]->id]);
-				header("Location:../..");
-				exit();
-				//theme,description,link,theme_id) VALUES(?,?,?,?)";
-				//$theme_id[0]->id
-			}
-		}
+public function addLink()
+{
+	if(!empty(trim($_POST['description'])) && !empty(trim($_POST['link'])))
+	{
+		$theme = $_POST['theme'];
+		$description = $_POST['description'];
+		$link = $_POST['link'];
+		$theme_id = $this->select('Themes','*',$theme,'theme');
+		$this->insert('links',['theme'=>$theme,'description' => $description,'link'=>$link,'theme_id'=>$theme_id[0]->id]);
+		header("Location:http://localhost/link");
+		exit();
+	}
+}
 	
 }

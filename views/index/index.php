@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF8">
 	<title>New Links</title>
-	<link href="<?=URL;?>public/img/duckduckgo.com.ico" rel="shortcut icon">
+	<link href="<?=URL?>public/img/duckduckgo.com.ico" rel="shortcut icon">
 	<link rel="stylesheet" type="text/css" href="<?=URL?>public/css/style.css">
 </head>
 <body>
@@ -20,7 +20,8 @@
 <div class="container">
 	<div id="someDivLeft" class="left">
 		<ul>
-<?php 
+<?php
+	//var_dump(mb_detect_encoding("ÐšÐ¾Ð½Ð²ÐµÑ€Ñ"));
 	/*$checkingArr = []; 
 	foreach($popularLinks as $link)
 	{
@@ -66,7 +67,7 @@
 	foreach ($popularLinks as $link => $value) 
 	{
 		$valueName = str_replace('_', ' ', $value->name);
-		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="',URL,'public/img/'.$value->img.'"><p><h6>',$valueName,'</h6></p></a><span class="close"></span><span class="edit"></span></li></div>';
+		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="http://localhost/link/public/img/'.$value->img.'"><p><h6>',$valueName,'</h6></p></a><span class="close"></span><span class="edit"></span></li></div>';
 	}
 
 ?>	

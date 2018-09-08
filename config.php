@@ -9,5 +9,10 @@
 	define('DB_USER','root');
 	define('DB_PASS','');
 
+
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";// without https://
+	/**
+	 * $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	 */
 	//path.php
-	define('URL','http://link/');
+	define('URL',$actual_link);

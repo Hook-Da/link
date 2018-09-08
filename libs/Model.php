@@ -23,7 +23,7 @@
 	public function select($table, $what, $param = null,$column = null)
 	{
 		$sql = "SELECT $what FROM `$table`";
-		if(count($param)) 
+		if(@count($param)) 
 		{
 			$sql .=" WHERE `$column` = '$param'";
 			return $this->execution($sql);
@@ -35,7 +35,7 @@
 	}
  	public function execution($sql,$params = null)
 	{
-		if(count($params))
+		if(@count($params))
 		{
 			$this->_query = $this->db->_pdo->prepare($sql);
 			$x = 1;
