@@ -21,53 +21,11 @@
 	<div id="someDivLeft" class="left">
 		<ul>
 <?php
-	//var_dump(mb_detect_encoding("ÐšÐ¾Ð½Ð²ÐµÑ€Ñ"));
-	/*$checkingArr = []; 
-	foreach($popularLinks as $link)
-	{
-		$urls = $link->link;
-		$parsedUrl = parse_url($urls);
-		if(!in_array($parsedUrl['host'], $checkingArr))
-		{	
-			$urls = $parsedUrl['scheme'].'://'.$parsedUrl['host'];
-			array_push($checkingArr, $parsedUrl['host']);
-			$doc = new DOMDocument();
-			$doc->strictErrorChecking = FALSE;
-			@$doc->loadHTML(file_get_contents($urls));
-			$xml = simplexml_import_dom($doc);
-			$arr = $xml->xpath('//link[@rel="shortcut icon"]');
-			echo $arr[0]['href'].'=========';
-
-			$urlArr = parse_url($arr[0]['href']);
-			$someKeys = array_keys($urlArr);
-
-			if(in_array('scheme', $someKeys))
-				$path = $arr[0]['href'];
-			else
-			{
-				$x = ltrim($arr[0]['href'],'/');
-				$path = $urls.'/'.$x;
-				echo $path;
-			}
-			$pathArr = parse_url($path);
-			$name = str_replace('/', '', $pathArr['host']); echo $pathArr['host'];
-			$name = 'public/img/'.$name.'.png';
-			echo $name;
-			$ch = curl_init($path);
-			$fp = fopen($name, 'wb');
-			curl_setopt($ch, CURLOPT_FILE, $fp);
-			curl_setopt($ch, CURLOPT_HEADER, 0);
-			curl_exec($ch);
-			curl_close($ch);
-			sleep(1);
-			fclose($fp);
-
-		}
-	}*/
+	
 	foreach ($popularLinks as $link => $value) 
 	{
 		$valueName = str_replace('_', ' ', $value->name);
-		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="http://localhost/link/public/img/'.$value->img.'"><p><h6>',$valueName,'</h6></p></a><span class="close"></span><span class="edit"></span></li></div>';
+		echo '<div><li class="position border"><a href=',$value->link,' target="_blank" ><img src="',URL,'public/img/'.$value->img.'"><p><h6>',$valueName,'</h6></p></a><span class="close"></span><span class="edit"></span></li></div>';
 	}
 
 ?>	

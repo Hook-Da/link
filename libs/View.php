@@ -6,7 +6,7 @@ class View
 	{
 		
 	}
-	public function render ($name, $popularLinks,$kollektions){
+	public function render ($name, $popularLinks = null,$kollektions = null){
 				require_once "views/$name.php";
 				/*require 'views/header.php';
 				require 'views/'.$name.'.php';

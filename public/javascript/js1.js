@@ -94,11 +94,11 @@ window.onload = function()
 					let dataObject = 
 					{
 						page: pathOfWebSite + '/update/editSave/q?',
-						data:this.parentElement.childNodes[0].childNodes[1].innerHTML,
+						data:this.parentElement.getElementsByTagName('h6')[0].innerHTML,
 						linkName: linkName
 					};
-					console.log(dataObject);
-					this.parentElement.childNodes[0].childNodes[1].innerHTML = escapeHtml(linkName);
+					console.log(this.parentElement);
+					this.parentElement.getElementsByTagName('h6')[0].innerHTML = escapeHtml(linkName);
 					get(dataObject);
 				}
 				/*if(confirm('Are you sure you want to delete this link?'))

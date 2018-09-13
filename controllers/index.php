@@ -9,9 +9,9 @@ class Index extends Controller
 	{
 		$modal = $this->loadModel('Index');
                 
-		$popularLinks = $modal->popular();
+		$popularLinks =  $modal->popular();
 		$kollektions = $modal->kollektion();
-		$this->view->render('index/index',$popularLinks,$kollektions);
+		$this->view->render('index/index', $popularLinks, $kollektions);
 	}
 
 }
