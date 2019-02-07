@@ -28,33 +28,21 @@
 		if(@count($param)) 
 		{
 			$sql .=" WHERE `$column` = '$param'";
-			return $this->execution($sql);
 		}
-	 else 
-         {
-            return $this->execution($sql);
-         }
+		return $this->execution($sql);
 	}
  	public function execution($sql,$params = null)
 	{
+		$this->_query = $this->db->_pdo->prepare($sql);
 		if(@count($params))
 		{
-			$this->_query = $this->db->_pdo->prepare($sql);
 			$x = 1;
 			foreach($params as $param)
 			{
-				$this->_query->bindValue($x,$param);
-				$x++;
+				$this->_query->bindValue($x++,$param);
 			}
+		}
 			$this->_query->execute();
 			return $this->_query->fetchALL(PDO::FETCH_OBJ);
-		}
-		else
-		{
-                        //var_dump($sql);die();
-			$this->_query = $this->db->_pdo->prepare($sql);	
-			$this->_query->execute();
-			return $this->_query->fetchALL(PDO::FETCH_OBJ);
-		}
 	}
  }

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.3
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Aug 31, 2018 at 12:14 AM
--- Server version: 5.7.19
--- PHP Version: 7.0.21
+-- Host: 127.0.0.1
+-- Generation Time: Feb 06, 2019 at 04:17 AM
+-- Server version: 10.1.35-MariaDB
+-- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -104,7 +104,60 @@ INSERT INTO `links` (`id`, `user_id`, `theme`, `description`, `link`, `theme_id`
 (63, NULL, 'My Project', 'Creating a Music Player Interface in Ionic 2 & 3', 'https://www.joshmorony.com/creating-a-music-player-interface-in-ionic-2/', 19),
 (64, NULL, 'My Project', 'How to design circle progress bar in ionic ', 'https://stackoverflow.com/questions/45735895/how-to-design-circle-progress-bar-in-ionic-3', 19),
 (65, NULL, 'My Project', 'Beautifully crafted open source icons', 'https://ionicons.com/', 19),
-(66, NULL, 'My Project', 'Open & Download PDF Files with Ionic', 'https://www.youtube.com/watch?v=kM4cCQn8Bz4&list=PLNFwX8PVq5q5SuSRwwEunXLuz6ZBzz6YG', 19);
+(66, NULL, 'My Project', 'Open & Download PDF Files with Ionic', 'https://www.youtube.com/watch?v=kM4cCQn8Bz4&list=PLNFwX8PVq5q5SuSRwwEunXLuz6ZBzz6YG', 19),
+(67, NULL, 'JoshMorony', 'Tabs and Sounds', 'https://www.joshmorony.com/sound-effects-using-html5-and-native-audio-in-ionic/', 20),
+(68, NULL, 'JoshMorony', 'Creating a Music Player Interface in Ionic 2 & 3', 'https://www.joshmorony.com/creating-a-music-player-interface-in-ionic-2/', 20),
+(69, NULL, 'php Manual', '$_SERVER', 'http://php.net/manual/en/reserved.variables.server.php', 21),
+(70, NULL, 'w3School', 'JavaScript Window Location', 'https://www.w3schools.com/js/js_window_location.asp', 22),
+(71, NULL, 'Ionic', 'Ionic Media', 'https://ionicframework.com/docs/native/media/', 24),
+(72, NULL, 'Progress bar', 'Circle progressbar', 'https://www.youtube.com/watch?v=isMmrOyz8gM&t=767s', 25),
+(73, NULL, 'JoshMorony', 'Provider adding globally', 'https://www.joshmorony.com/an-in-depth-explanation-of-providers-in-ionic-2/', 20),
+(74, NULL, 'Ionic', 'Ionic side menu with Multiple Tabs', 'https://www.youtube.com/watch?v=IzUip9UEqV0', 24),
+(75, NULL, 'Ionic', 'Refresher. Refresh on pull', 'https://ionicframework.com/docs/api/components/refresher/Refresher/', 24),
+(76, NULL, 'SQL', 'SQL wildCard Characters', 'https://www.w3schools.com/sql/sql_wildcards.asp', 15),
+(77, NULL, 'SQL', 'Sql In', 'https://www.w3schools.com/sql/sql_in.asp', 15),
+(78, NULL, 'Git', 'Git remote', 'https://www.youtube.com/watch?v=Gg4bLk8cGNo', 16),
+(80, NULL, 'TypeScript', 'InterFaces', 'https://www.typescriptlang.org/docs/handbook/interfaces.html', 27),
+(81, NULL, 'Adam Khoury', 'Channel', 'https://www.youtube.com/user/flashbuilding', 28),
+(82, NULL, 'php', 'Alex Garett second Channel', 'https://www.youtube.com/channel/UCZasAPol8tLLQExcLBudgpg/videos', 1),
+(83, NULL, 'Ionic', 'Run Ionic Cordova on virtual device', 'https://forum.ionicframework.com/t/run-ionic-cordova-app-on-device-emulator/106377', 24),
+(84, NULL, 'laravel', 'laravel + vue', 'https://www.youtube.com/watch?v=s347k3JfqUI&list=PLe30vg_FG4OSl8zlikYc_RLkfueqAMUb_&index=5', 2),
+(85, NULL, 'Vue', 'Event modifiers', 'https://vuejs.org/v2/guide/', 29),
+(86, NULL, 'Ethical hacking', '90 lessons', 'https://www.youtube.com/watch?v=tHd8k54kVs8&list=PLBf0hzazHTGOEuhPQSnq-Ej8jRyXxfYvl', 30),
+(87, NULL, 'Ethical hacking', '96 lessons', 'https://www.youtube.com/watch?v=O90lSMmTjjo&list=PL5M9PV7jzdcVjz0WYZQaTHy1gqPmU44Jh', 30),
+(88, NULL, 'CSS', 'Advanced CSS', 'https://www.youtube.com/watch?v=Awr0PcuDiNM&list=PLJFQaBvGIKsIvYocA2S19_9ypV8pK1aXI', 14),
+(89, NULL, 'CSS', 'Css for beginers', 'https://www.youtube.com/watch?v=qKoajPPWpmo&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C', 14),
+(90, NULL, 'Ionic', 'Larse Bilde', 'https://www.youtube.com/channel/UCz25VbXwsbFsd3ynkNGok2w', 24),
+(91, NULL, 'Assembly', 'Writing NES Games! With Assembly!!', 'https://www.youtube.com/watch?v=kXbMCKMJXXQ', 31),
+(92, NULL, 'Espanyol', 'Спряжение глагола читаьт', 'http://27espanol.com/s/leer/', 32),
+(93, NULL, 'CSS', 'Css positioning tutorial net ninja', 'https://www.youtube.com/watch?v=nE9lIRbIfI0&index=5&list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh', 14),
+(94, NULL, 'JoshMorony', 'Custom Pipe', 'https://www.youtube.com/watch?v=Z1g1iroNHK0', 20),
+(95, NULL, 'Ionic', 'Apk file ionic', 'https://ionicframework.com/docs/v1/guide/publishing.html', 24),
+(96, NULL, 'JavaScript', 'program like pro', 'https://www.youtube.com/watch?v=Mus_vwhTCq0', 4),
+(97, NULL, 'Promises JS', 'part 1', 'https://www.youtube.com/watch?v=QO4NXhWo_NM', 33),
+(98, NULL, 'Promises JS', 'part 2', 'https://www.youtube.com/watch?v=AwyoVjVXnLk', 33),
+(99, NULL, 'Promises JS', 'Series of promises', 'https://www.youtube.com/watch?v=QO4NXhWo_NM&list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx', 33),
+(100, NULL, 'Dev Mozilla', 'Blob', 'https://developer.mozilla.org/en-US/docs/Web/API/Blob', 34),
+(101, NULL, 'Dev Mozilla', 'Fetch', 'https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch', 34),
+(102, NULL, 'Dev Mozilla', 'Body.blob()', 'https://developer.mozilla.org/en-US/docs/Web/API/Body/blob', 34),
+(103, NULL, 'JavaScript', 'New features', 'https://www.youtube.com/watch?v=vExLi5bTt3k&list=PLWKjhJtqVAbljtmmeS0c-CEl2LdE-eR_F&index=5', 4),
+(104, NULL, 'Ionic', 'Ionic build.glader fix', 'https://github.com/facebook/react-native/issues/19485', 24),
+(105, NULL, 'chess', 'Chesswood', 'https://www.youtube.com/watch?v=UJdHXwj3sas&list=PLN3gWvpTr68xyqS3lSkBxTPeIkEEeFCB-', 3),
+(106, NULL, 'laravel', 'File System', 'https://laravel.com/docs/5.2/filesystem', 2),
+(107, NULL, 'CSS', 'Css framefork materialize', 'https://materializecss.com/', 14),
+(108, NULL, 'php', 'oop php ', 'https://www.youtube.com/watch?v=PUAXNG8N5T8&list=PLe30vg_FG4OSEHH6bRF8FrA7wmoAMUZLv', 1),
+(109, NULL, 'JavaScript', 'js game', 'https://www.youtube.com/channel/UCzQvgRgjjxhzEORvefubDPw/playlists', 4),
+(110, NULL, 'php', 'Traits', 'http://php.net/manual/ru/language.oop5.traits.php', 1),
+(111, NULL, 'php', 'XML stuff', 'http://php.net/manual/en/book.xmlwriter.php', 1),
+(112, NULL, 'DataBases', 'MariaDB tutorials', 'https://www.youtube.com/watch?v=OxLH86Q69jo&list=PLWf6TEjiiuICzBqlOtk8miOhPAzIrm-mG', 35),
+(113, NULL, 'DataBases', 'MongoDB', 'https://www.youtube.com/watch?v=9OPP_1eAENg&list=PL4cUxeGkcC9jpvoYriLI0bY8DOgWZfi6u', 35),
+(114, NULL, 'JavaScript', 'Equality Table', 'https://dorey.github.io/JavaScript-Equality-Table/', 4),
+(115, NULL, 'JavaScript', 'logical operators', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators', 4),
+(116, NULL, 'php', 'Reflection', 'http://php.net/manual/en/book.reflection.php', 1),
+(117, NULL, 'php', 'Возвращаемый тип', 'http://php.net/manual/ru/functions.returning-values.php', 1),
+(118, NULL, 'CSS', 'Заголовок с линиями по бокам', 'http://dimox.name/verstka-zagolovka-s-gorizontalnoj-liniej-sleva-i-sprava-ot-teksta/', 14),
+(119, NULL, 'C++', 'C++ OOP', 'https://www.youtube.com/watch?v=rZcTaRU7AAw&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX', 36),
+(120, NULL, 'Рисование', 'Урок по рисование головы фронт', 'https://www.youtube.com/watch?v=2lLP_L2nFlI', 37);
 
 -- --------------------------------------------------------
 
@@ -136,7 +189,7 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (32, 'https://www.rapidtables.com/web/color/RGB_Color.html', 'RGB', 'www.rapidtables.com.ico'),
 (33, 'https://p5js.org/reference/', 'p5.js reference', 'p5js.org.ico'),
 (79, 'https://ufa.hh.ru/', 'HeadHunt', 'hh.png'),
-(80, 'https://poufe.ru/', 'По Уфе', 'poufe.ru.ico'),
+(80, 'https://poufe.ru/', 'по Уфе', 'poufe.ru.ico'),
 (84, 'https://getbootstrap.com/', 'BootStrap', 'bootstrap.png'),
 (85, 'https://www.gismeteo.ru/weather-ufa-4588/', 'Gismeteo', 'gism.ico'),
 (92, 'https://2gis.ru/ufa', 'ДубльГис', '2gis.ico'),
@@ -145,17 +198,11 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (100, 'http://php.net/manual/ru/function.preg-match.php', 'Preg_Match', 'php.net.ico'),
 (101, 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators', 'операторы присваивания', 'developer.mozilla.org.jpg'),
 (102, 'https://proxybay.bz/', 'list of PB', 'proxybay.bz.ico'),
-(103, 'https://www.indir.vip/guncell-eset-smart-nod32-mobil-premium-serial-key-2018.html', 'keys_NoD32', 'google.ico'),
-(114, 'https://lichess.org/', 'liChess.', 'lichess.org.ico'),
+(114, 'https://lichess.org/', 'liChess.', 'lichess.org.png'),
 (115, 'https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp', 'w3school', 'www.w3schools.com.ico'),
-(116, 'https://www.indir.vip/guncell-eset-smart-nod32-mobil-premium-serial-key-2018.html', 'keys_Nod32', 'www.indir.vip.ico'),
 (118, 'https://jsfiddle.net/', 'JsFiddle', 'jsfiddle.net.ico'),
 (121, 'http://php.net/manual/ru/function.substr.php', 'substr_fn', 'php.net.ico'),
-(124, 'https://html.spec.whatwg.org/multipage/input.html#htmlinputelement', 'HTML_Standart', 'html.spec.whatwg.org.ico'),
-(125, 'http://w3c.github.io/html-reference/elements.html', 'HTML_Elements', 'w3c.github.io.ico'),
-(127, 'http://huzlek.bashqort.com/index.php?id=home', 'Башкирский', 'huzlek.bashqort.com.ico'),
 (128, 'https://www1.putlockerfit.net/', 'New_Putlocker', 'www1.putlockerfit.net.ico'),
-(129, 'https://thekickasstorrents.com/', 'torrent_kick_', 'thekickasstorrents.com.ico'),
 (133, 'https://www.youtube.com/watch?v=-3u3pJaf2V8', 'Turkish', 'www.youtube.com.ico'),
 (138, 'https://unblocked.vet/', 'torrent_sites', 'unblocked.vet.ico'),
 (139, 'https://learn.javascript.ru/document', 'Продолжить', 'learn.javascript.ru.ico'),
@@ -167,7 +214,6 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (146, 'https://evilinside.ru/parsing-s-pomoshhyu-domcrawler-v-laravel-5-6/', 'парсинг_сайта_с_помощью_Laravel', 'evilinside.ru.ico'),
 (147, 'https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w', 'Academind', 'www.youtube.com.ico'),
 (148, 'https://www.youtube.com/watch?v=XTSc2mPF4II', 'WireShark', 'www.youtube.com.ico'),
-(149, 'https://www.youtube.com/watch?v=V5vhPqVYK38', '24/7_Turkish', 'www.youtube.com.ico'),
 (150, 'https://1chess.org/#/id224090998', 'france', '1chess.org.ico'),
 (151, 'https://vse10.ru/main/', 'Trauner-Rus', 'vse10.ru.ico'),
 (152, 'https://www.ratatype.com/u850128/?new_registered#_=_', 'Trainer-Eng', 'www.ratatype.com.ico'),
@@ -177,17 +223,14 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (156, 'https://laravel.ru/docs/v5/queries', 'Конструктор_запросов_', 'laravel.ru.ico'),
 (157, 'https://laravel.ru/docs/v5/eloquent-collections#%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5', 'Collection._Available_methods._Eloquent', 'laravel.ru.ico'),
 (158, 'http://php.net/manual/ru/language.oop5.traits.php', 'Trait_php', 'php.net.ico'),
-(160, 'https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript/record-collection', 'Просмотреть_еще_', 'learn.freecodecamp.org.ico'),
 (161, 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment', 'Destructuring_assignment', 'developer.mozilla.org.ico'),
 (162, 'https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=1', 'Angular', 'www.youtube.com.ico'),
 (163, 'https://www.youtube.com/watch?v=YPShu0H3RbM&list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU', 'TypeScript', 'www.youtube.com.ico'),
 (164, 'http://php.net/manual/ru/language.oop5.overloading.php', 'Reload_php', 'php.net.ico'),
 (165, 'https://code.visualstudio.com/', 'WindCodeEditor', 'code.visualstudio.com.ico'),
-(166, 'https://www.kinopoisk.ru/film/pakt-2011-615602/', 'The_pact', 'www.kinopoisk.ru.ico'),
 (167, 'https://habr.com/post/133363/', 'Angular_CLI', 'habr.com.ico'),
 (168, 'https://proglib.io/p/git-github-gitflow/', 'read_up', 'proglib.io.ico'),
 (171, 'https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html', 'Git-flow_tips', 'danielkummer.github.io.ico'),
-(172, 'https://2uit.flowlu.ru/feed', 'Flowlu', '2uit.flowlu.ru.ico'),
 (174, 'https://www.youtube.com/watch?v=TPtv3Sj87KE&list=PLvLBrJpVwC7piPgR6u165HAnr-2Z80etB', 'Ionic_tuts', 'www.youtube.com.ico'),
 (176, 'https://www.youtube.com/watch?v=sXFmkdhOEVc&list=PLvLBrJpVwC7piPgR6u165HAnr-2Z80etB&index=4', 'Hacking', 'www.youtube.com.ico'),
 (181, 'https://bitbucket.org/account/user/Hook_Banner/', 'BitBucket', 'bitbucket.org.png'),
@@ -197,25 +240,55 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (185, 'https://www.youtube.com/watch?v=ei7FsoXKPl0&list=PLuCVssMJ_UI0ERHV9C0UIAo7SJmRNOrrj', 'RxJS_Observable', 'www.youtube.com.ico'),
 (186, 'https://www.youtube.com/watch?v=g-DzyBv2Ndg&list=PLtKjv92L0ihD_Hre-d12JihnQ_BanTD7c', 'Ionic_67_tuts', 'www.youtube.com.ico'),
 (187, 'https://drive.google.com/drive/folders/18FiTdKnG0wAGBqQqn_e_TeqKtp31J6qr', 'Эскизы', 'drive.google.com.om/'),
-(188, 'https://www.joshmorony.com/sound-effects-using-html5-and-native-audio-in-ionic/', 'Tabs_and_Sounds', 'www.joshmorony.com.png'),
-(189, 'https://nodejs.org/dist/', 'NodeVersions', 'nodejs.org.png');
+(189, 'https://nodejs.org/dist/', 'Node_Versions', 'nodejs.org.png'),
+(190, 'https://www.w3.org/TR/CSS2/visudet.html', 'Visual_formating', 'www.w3.org.ico'),
+(191, 'https://www.w3schools.com/jsref/prop_audio_playbackrate.asp', 'Html_audio', 'www.w3schools.com.ico'),
+(192, 'https://www.youtube.com/watch?v=r2UFy0FW8wc', 'Android_SDK_tools', 'www.youtube.com.ico'),
+(193, 'https://gradle.org/install/', 'Gradle_install', 'gradle.org.ico'),
+(194, 'https://www.youtube.com/watch?v=1rw9MfIleEg', 'Gulp_Crash_Course', 'www.youtube.com.ico'),
+(195, 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects', 'developer_moz', 'developer.mozilla.org.jpg'),
+(201, 'http://w3c.github.io/html-reference/elements.html', 'HTML_element', 'w3c.githubio.ico'),
+(202, 'https://html.spec.whatwg.org/multipage/input.html#htmlinputelement', 'HTML_standart', 'html.spec.whatwg.org.svg'),
+(206, 'http://huzlek.bashqort.com/index.php?id=home', 'Башкирский', 'Русско-башкирский онлайн словарь.png'),
+(207, 'https://www.youtube.com/watch?v=F_kSJ3uz2-Q&list=PL3ZhWMazGi9IommUd5zQmjyNeF7s1sP7Y', 'Laravel_+_Vue', 'www.youtube.com.ico'),
+(208, 'https://www.youtube.com/watch?v=eq--V9P4rmM&list=PLxIXIaLcdFwD_gbMXHUOYqQtXTIPrys8L', 'French', 'www.youtube.com.ico'),
+(210, 'https://docs.google.com/document/d/1Fyk6FkSprhpiZh2P307JMpMDMJwsd_tqqGor3LRjrL0/edit', 'Тех._задание', 'Вход – Google Аккаунты.png'),
+(211, 'https://thenounproject.com/search/?q=cloud-download', 'Icons', 'thenounproject.com.png'),
+(212, 'https://www.youtube.com/watch?v=aircAruvnKk&t=391s', 'NN_II', 'www.youtube.com.ico'),
+(213, 'https://www.youtube.com/watch?v=u-Idt0lIsw0&list=PLIcAMDxr6tprlJD1uUXo8-1R3RMqoEPjT', 'Lodash', 'www.youtube.com.ico'),
+(214, 'https://www.youtube.com/watch?v=T9wOu11uU6U&list=PL55RiY5tL51pHpagYcrN9ubNLVXF8rGVi', 'RxJS', 'www.youtube.com.ico'),
+(215, 'https://www.youtube.com/channel/UCdQ_ZkYaMe6qPoueUyPQgpQ', 'New_Photoshop_siries', 'www.youtube.com.ico'),
+(216, 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys', 'Object_obj', 'developer.mozilla.org.jpg'),
+(217, 'https://www.fullindir.co/eset-nod32-antivirus-guncel-lisans-anahtarlari/', 'Est_Nod_32_keys', 'www.fullindir.co.png'),
+(218, 'http://image.intervention.io/', 'Laravel_img_libr', 'Intervention Image - Introduction.png'),
+(219, 'https://www.youtube.com/watch?v=2Vf1D-rUMwE&list=PLl-K7zZEsYLmnJ_FpMOZgyg6XcIGBu2OX', 'Get_start_firebase', 'www.youtube.com.ico'),
+(220, 'https://www.youtube.com/watch?v=J_ayfPetE2M&list=PLe30vg_FG4OSl8zlikYc_RLkfueqAMUb_', 'Laravel_5.5_Vuejs_Phonebook_App', 'www.youtube.com.ico'),
+(221, 'https://www.youtube.com/watch?v=CowsopJhX3M&list=PLB4AdipoHpxaHDLIaMdtro1eXnQtl_UvE&index=2', 'Multi-Purpose_Laravel', 'www.youtube.com.ico'),
+(222, 'https://www.youtube.com/watch?v=u6CwVxcyfD0&list=PLe30vg_FG4OQsCOAzymRY5GkQpFqc1U-D', 'Laravel_Real_Time_Chat', 'www.youtube.com.ico'),
+(223, 'https://fontawesome.com/v4.7.0/icon/pencil', 'Font_awesome', 'fontawesome.com.png'),
+(224, 'https://www.w3schools.com/tags/ref_canvas.asp', 'Canvas_funcs', 'www.w3schools.com.ico'),
+(225, 'http://php.net/manual/en/book.xmlwriter.php', 'XML_Manipulation', 'php.net.ico'),
+(226, 'https://yandex.ru/internet/', 'Yandex_Speed', 'yandex.ru.png'),
+(227, 'https://www.youtube.com/watch?v=wM4L_yDGqpo&list=PLB4AdipoHpxaHDLIaMdtro1eXnQtl_UvE', 'Laravel_+_admin', 'www.youtube.com.ico'),
+(228, 'https://vk.com/@proglib-podborka-statei-po-data-science', 'Data_analyse', 'vk.com.ico'),
+(229, 'https://www.youtube.com/watch?v=fpD8_fJ2VUA&list=PL9XdPIVgBVVmYWGF3BFZwHu4Fz9fa6GJd', 'Yii2_Russian', 'www.youtube.com.ico');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Themes`
+-- Table structure for table `themes`
 --
 
-CREATE TABLE `Themes` (
+CREATE TABLE `themes` (
   `id` int(11) NOT NULL,
   `theme` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `Themes`
+-- Dumping data for table `themes`
 --
 
-INSERT INTO `Themes` (`id`, `theme`) VALUES
+INSERT INTO `themes` (`id`, `theme`) VALUES
 (1, 'php'),
 (2, 'laravel'),
 (3, 'chess'),
@@ -234,7 +307,24 @@ INSERT INTO `Themes` (`id`, `theme`) VALUES
 (16, 'Git'),
 (17, 'ECMA'),
 (18, 'Photoshop'),
-(19, 'My Project');
+(19, 'My Project'),
+(20, 'JoshMorony'),
+(21, 'php Manual'),
+(22, 'w3School'),
+(23, 'Angular'),
+(24, 'Ionic'),
+(25, 'Progress bar'),
+(27, 'TypeScript'),
+(28, 'Adam Khoury'),
+(29, 'Vue'),
+(30, 'Ethical hacking'),
+(31, 'Assembly'),
+(32, 'Espanyol'),
+(33, 'Promises JS'),
+(34, 'Dev Mozilla'),
+(35, 'DataBases'),
+(36, 'C++'),
+(37, 'Рисование');
 
 --
 -- Indexes for dumped tables
@@ -253,9 +343,9 @@ ALTER TABLE `popular`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `Themes`
+-- Indexes for table `themes`
 --
-ALTER TABLE `Themes`
+ALTER TABLE `themes`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -266,17 +356,20 @@ ALTER TABLE `Themes`
 -- AUTO_INCREMENT for table `links`
 --
 ALTER TABLE `links`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+
 --
 -- AUTO_INCREMENT for table `popular`
 --
 ALTER TABLE `popular`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
+
 --
--- AUTO_INCREMENT for table `Themes`
+-- AUTO_INCREMENT for table `themes`
 --
-ALTER TABLE `Themes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;COMMIT;
+ALTER TABLE `themes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

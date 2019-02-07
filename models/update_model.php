@@ -55,20 +55,52 @@
 		$picture_name = $host; 
 		$url = $url['scheme'].'://'.$url['host'];
 		$name = 'public/img/'.$host;
-		$host = file_exists("$name.ico") ? "$host.ico":(file_exists("$name.png")?"$host.png":false);
-		
+		$host = file_exists("$name.ico") ? "$host.ico":(file_exists("$name.png")?"$host.png":(file_exists("$name.jpg")?"$host.jpg":false));
+
+		/*$doc = new DOMDocument();
+		$doc->strictErrorChecking = FALSE;
+		@$doc->loadHTML(file_get_contents($url));
+		$xml = simplexml_import_dom($doc);
+		//var_dump($xml->xpath('//title')[0]);
+		$im = @imagecreate(50, 50)
+    	or die("Невозможно создать поток изображения");
+		$background_color = imagecolorallocate($im, 0, 0, 0);
+		$text_color = imagecolorallocate($im, 40, 230, 15);
+		imagestring($im, 1, 5, 5,  'Some Text', $text_color);
+		imagepng($im);
+		var_dump($im);
+		die();*/
+
 		if($host){return $host;}
 		else{
 		$doc = new DOMDocument();
 		$doc->strictErrorChecking = FALSE;
-		@$doc->loadHTML(file_get_contents($url));
+
+		$source = mb_convert_encoding(file_get_contents($url), 'HTML-ENTITIES', 'utf-8');
+		@$doc->loadHTML($source);
+
 		$xml = simplexml_import_dom($doc);
 		$arr = $xml->xpath('//link[@rel="shortcut icon"]');
 		if(!sizeof($arr))
 		{
 			$arr = $xml->xpath('//link[@rel="icon"]');
 		}
-		
+		if(!sizeof($arr))
+		{
+			$name = $xml->xpath('//title')[0];
+
+			$length = 60;
+			if(strlen($name)*9.3 > 60) $length = 100;
+			$im = @imagecreate($length, 60);
+
+			$background_color = imagecolorallocate($im, 0, 0, 0);
+			$text_color = imagecolorallocate($im, 233, 14, 91);
+
+			imagestring($im, 10, 5, 20, $name, $text_color);
+			$save = "public/img/$name.png";
+			imagepng($im,$save);
+			return "$name.png";
+		}
 		
 		$path = ''.$arr[0]['href'];
 

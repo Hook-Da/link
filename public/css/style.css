@@ -267,4 +267,8 @@ li a p
 {
 	background-color: black;
 }
-
+.addClassToSelectOnFocus
+{
+	background: #0f0;
+	opacity: 0.8;
+}
