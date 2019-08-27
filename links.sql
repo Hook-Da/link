@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Авг 27 2019 г., 10:08
+-- Время создания: Авг 27 2019 г., 11:47
 -- Версия сервера: 5.6.38
 -- Версия PHP: 7.1.12
 
@@ -189,7 +189,14 @@ INSERT INTO `links` (`id`, `user_id`, `theme`, `description`, `link`, `theme_id`
 (149, NULL, 'Yarn', 'Migrating from yarn to npm', 'https://yarnpkg.com/en/docs/migrating-from-npm', 47),
 (150, NULL, 'Node.js', 'All Node.js versions', 'https://nodejs.org/dist/', 10),
 (151, NULL, 'JoshMorony', 'How slots work', 'https://www.joshmorony.com/understanding-how-slots-are-used-in-ionic-4/', 20),
-(152, NULL, 'JavaScript', 'Observable from promise', 'https://blog.angularindepth.com/observable-frompromise-cold-or-hot-531229818255', 4);
+(152, NULL, 'JavaScript', 'Observable from promise', 'https://blog.angularindepth.com/observable-frompromise-cold-or-hot-531229818255', 4),
+(153, NULL, 'Angular', 'Two ways data binding', 'https://blog.thoughtram.io/angular/2016/10/13/two-way-data-binding-in-angular-2.html', 23),
+(154, NULL, 'NestJs', 'Data binary sendying', 'https://www.techiediaries.com/nestjs-upload-serve-static-file/', 48),
+(155, NULL, 'w3schools', 'SVG tutorial', 'https://www.w3schools.com/graphics/svg_intro.asp', 49),
+(156, NULL, 'developer Moz', 'Mimi types', 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types', 43),
+(157, NULL, 'Angular', 'Gestures in angular', 'https://blog.angularindepth.com/gestures-in-an-angular-application-dde71804c0d0', 23),
+(158, NULL, 'Angular', 'Angular change detections', 'https://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html', 23),
+(159, NULL, 'JoshMorony', 'Zone explain', 'https://www.joshmorony.com/understanding-zones-and-change-detection-in-ionic-2-angular-2/', 20);
 
 -- --------------------------------------------------------
 
@@ -318,7 +325,10 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (243, 'https://docs.google.com/document/d/1W0yYJxFXD_fgy7ZmB2NUkee0Ph3lZNzXH1A8srvxeAc/edit?usp=sharing', 'Интеграция_слак_и_гитлаб', 'Вход – Google Аккаунты.png'),
 (244, 'https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469', 'TCP/Ip_illustrated', 'Amazon.com: Online Shopping for Electronics, Apparel, C'),
 (245, 'https://www.leaseweb.com/', 'Хостинг', 'www.leaseweb.com.ico'),
-(246, 'https://github.com/coreybutler/nvm-windows', 'Nvm_for_Windows', 'github.com.ico');
+(246, 'https://github.com/coreybutler/nvm-windows', 'Nvm_for_Windows', 'github.com.ico'),
+(247, 'https://adoptopenjdk.net/', 'OpenJDK', 'adoptopenjdk.net.ico'),
+(248, 'https://www.hongkiat.com/blog/svg-animations/', 'Cool_animation', '.png'),
+(249, 'http://forum.ru-board.com/topic.cgi?bm=1&forum=2&topic=5328', 'Ротибор', '  Ru.Board.png');
 
 -- --------------------------------------------------------
 
@@ -381,7 +391,9 @@ INSERT INTO `themes` (`id`, `theme`) VALUES
 (44, 'Проблемы с плагином media'),
 (45, 'in-app-purchase'),
 (46, 'background plugin'),
-(47, 'Yarn');
+(47, 'Yarn'),
+(48, 'NestJs'),
+(49, 'w3schools');
 
 --
 -- Индексы сохранённых таблиц
@@ -413,19 +425,19 @@ ALTER TABLE `themes`
 -- AUTO_INCREMENT для таблицы `links`
 --
 ALTER TABLE `links`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=160;
 
 --
 -- AUTO_INCREMENT для таблицы `popular`
 --
 ALTER TABLE `popular`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=247;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 
 --
 -- AUTO_INCREMENT для таблицы `themes`
 --
 ALTER TABLE `themes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
