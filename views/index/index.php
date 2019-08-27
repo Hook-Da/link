@@ -70,14 +70,14 @@
 
 		<form class="linkForm border display" action="<?=URL?>update/addPopular" method="post">
 			<table>
-				<tr>
-			<td>Описание:</td>
-			<td><input type="text" class="border size" name="name"></td>
-				</tr>
-				<tr>
-			<td>Link:</td>
-			<td><input type="text" class="border size" name="link"></td>
-				</tr>
+			<tr>
+				<td>Описание:</td>
+				<td><input type="text" class="border size" name="name"></td>
+			</tr>
+			<tr>
+				<td>Ссылка:</td>
+				<td><input type="text" class="border size" name="link"></td>
+			</tr>
 			<tr>
 				<td></td>
 				<td><input type="submit" value="Save"></td>

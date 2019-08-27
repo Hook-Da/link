@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 06, 2019 at 04:17 AM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Хост: 127.0.0.1:3306
+-- Время создания: Авг 27 2019 г., 10:08
+-- Версия сервера: 5.6.38
+-- Версия PHP: 7.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `links`
+-- База данных: `links`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `links`
+-- Структура таблицы `links`
 --
 
 CREATE TABLE `links` (
@@ -38,7 +38,7 @@ CREATE TABLE `links` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 --
--- Dumping data for table `links`
+-- Дамп данных таблицы `links`
 --
 
 INSERT INTO `links` (`id`, `user_id`, `theme`, `description`, `link`, `theme_id`) VALUES
@@ -157,12 +157,44 @@ INSERT INTO `links` (`id`, `user_id`, `theme`, `description`, `link`, `theme_id`
 (117, NULL, 'php', 'Возвращаемый тип', 'http://php.net/manual/ru/functions.returning-values.php', 1),
 (118, NULL, 'CSS', 'Заголовок с линиями по бокам', 'http://dimox.name/verstka-zagolovka-s-gorizontalnoj-liniej-sleva-i-sprava-ot-teksta/', 14),
 (119, NULL, 'C++', 'C++ OOP', 'https://www.youtube.com/watch?v=rZcTaRU7AAw&list=PLQOaTSbfxUtBm7DxblJZShqBQnBAVzlXX', 36),
-(120, NULL, 'Рисование', 'Урок по рисование головы фронт', 'https://www.youtube.com/watch?v=2lLP_L2nFlI', 37);
+(120, NULL, 'Рисование', 'Урок по рисование головы фронт', 'https://www.youtube.com/watch?v=2lLP_L2nFlI', 37),
+(121, NULL, 'Ionic', 'Ionic Splash screen', 'https://ionicframework.com/docs/cli/commands/cordova-resources/', 24),
+(122, NULL, 'JavaScript', 'Введение в DOM', 'https://developer.mozilla.org/ru/docs/DOM/DOM_Reference/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5', 4),
+(123, NULL, 'JavaScript', 'DOM API', 'https://developer.mozilla.org/ru/docs/Web/JavaScript/JavaScript_technologies_overview', 4),
+(124, NULL, 'laravel', 'Validating in-app-purchase', 'http://blog.goforyt.com/validating-android-app-purchases-laravel/', 2),
+(125, NULL, 'Yii2 Framework', 'Websockets in Yii2', 'https://weburoki.pro/web-socket-yii2', 38),
+(126, NULL, 'Websockets', 'Websockets book', 'https://tools.ietf.org/html/rfc6455', 39),
+(127, NULL, 'Xpath theme', 'How to extract with XPAth', 'https://www.quora.com/How-do-I-extract-an-attributes-value-through-XPath', 40),
+(128, NULL, 'Codeception', 'Something about codeception', 'https://codeception.com/docs/reference/Commands#GenerateSuite', 41),
+(129, NULL, 'Codeception', 'Advantage usage', 'https://codeception.com/docs/07-AdvancedUsage#DataProvider-Annotations', 41),
+(130, NULL, 'Electron', 'Electronjs.org', 'https://electronjs.org/', 42),
+(131, NULL, 'developer Moz', 'Web api', 'https://developer.mozilla.org/en-US/docs/Web/API', 43),
+(132, NULL, 'C++', 'Обзор графических библиотек', 'https://tproger.ru/digest/cpp-best-gui/', 36),
+(133, NULL, 'Yii2 Framework', 'Вывод списка записей с помощью ListView', 'http://www.webapplex.ru/vyivod-spiska-zapisej-s-pomoshhyu-vidzheta-listview-v-2.x', 38),
+(134, NULL, 'Проблемы с плагином media', 'AvAudio', 'https://stackoverflow.com/questions/42432997/avaudiosession-error-deactivating-an-audio-session-that-has-running-i-o', 44),
+(135, NULL, 'Проблемы с плагином media', 'AvAudio 2', 'https://github.com/muhku/FreeStreamer/issues/153', 44),
+(136, NULL, 'Проблемы с плагином media', 'Переключение на background', 'https://forum.ionicframework.com/t/cordova-plugin-media-ios-audio-not-starting-when-app-in-background/99020/4', 44),
+(137, NULL, 'Проблемы с плагином media', 'Problem on background', 'https://github.com/spudmashmedia/cordova-plugin-media/commit/946ffcf569cbaa22241e8ec00f11b4a52a0c6809', 44),
+(138, NULL, 'Проблемы с плагином media', 'Problem on background 3', 'https://forum.ionicframework.com/t/ios-9-2-cordova-plugin-media-no-sound-fix-on-the-way/45100/5', 44),
+(139, NULL, 'in-app-purchase', 'testing android', 'https://forum.ionicframework.com/t/ios-9-2-cordova-plugin-media-no-sound-fix-on-the-way/45100/5', 45),
+(140, NULL, 'JavaScript', 'отладка js на примере chrome Devtools', 'https://www.youtube.com/watch?v=kBHUEFYawTk', 4),
+(141, NULL, 'background plugin', 'Previously configured settings got overwritten by defaults [Fixes #179] · katzer/cordova-plugin-background-mode@5fdfb98', 'https://github.com/katzer/cordova-plugin-background-mode/commit/5fdfb9885ceb4c7a8f874a655184c509718175b5', 46),
+(142, NULL, 'background plugin', 'how to remove notification · Issue #179 · katzer/cordova-plugin-background-mode', 'https://github.com/katzer/cordova-plugin-background-mode/issues/179', 46),
+(143, NULL, 'background plugin', '\"App is running in background, doing heavy tasks!\" appears randomly when silent : true · Issue #368 · katzer/cordova-plugin-background-mode', 'https://github.com/katzer/cordova-plugin-background-mode/issues/368', 46),
+(144, NULL, 'background plugin', 'katzer/cordova-plugin-background-mode', 'https://github.com/katzer/cordova-plugin-background-mode', 46),
+(145, NULL, 'in-app-purchase', 'InAppBillingService does not exist · Issue #38 · AlexDisler/cordova-plugin-inapppurchase', 'https://github.com/AlexDisler/cordova-plugin-inapppurchase/issues/38', 45),
+(146, NULL, 'in-app-purchase', 'googlesamples/android-play-billing', 'https://github.com/googlesamples/android-play-billing/blob/master/TrivialDrive/app/src/main/aidl/com/android/vending/billing/IInAppBillingService.aidl', 45),
+(147, NULL, 'JavaScript', 'Pure Js Sortable List', 'https://codepen.io/rainner/pen/YGrzpv', 4),
+(148, NULL, 'developer Moz', 'Math.trunc()', 'https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc', 43),
+(149, NULL, 'Yarn', 'Migrating from yarn to npm', 'https://yarnpkg.com/en/docs/migrating-from-npm', 47),
+(150, NULL, 'Node.js', 'All Node.js versions', 'https://nodejs.org/dist/', 10),
+(151, NULL, 'JoshMorony', 'How slots work', 'https://www.joshmorony.com/understanding-how-slots-are-used-in-ionic-4/', 20),
+(152, NULL, 'JavaScript', 'Observable from promise', 'https://blog.angularindepth.com/observable-frompromise-cold-or-hot-531229818255', 4);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `popular`
+-- Структура таблицы `popular`
 --
 
 CREATE TABLE `popular` (
@@ -173,7 +205,7 @@ CREATE TABLE `popular` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `popular`
+-- Дамп данных таблицы `popular`
 --
 
 INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
@@ -182,13 +214,11 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (4, 'https://www.youtube.com/', 'YouTube', 's.ytimg.com.ico'),
 (5, 'https://1chess.org/#/me', 'Шахматы', '1chess.org.ico'),
 (21, 'https://vk.com/', 'В контакте', 'vk.com.ico'),
-(22, 'https://www.facebook.com/', 'Facebook', 'static.xx.fbcdn.net.ico'),
 (23, 'https://www.google.ru/search?q=took+%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4&ie=utf-8&oe=utf-8&gws_rd=cr&ei=tXJvWcb3B4iv6AS__5eoDA', 'Vocab-GooGLe', 'google.ico'),
 (27, 'https://mail.ru/', 'Mail.ru', 'mail.ico'),
 (28, 'https://duckduckgo.com/', 'Duck-Duck', 'duckduckgo.com.ico'),
 (32, 'https://www.rapidtables.com/web/color/RGB_Color.html', 'RGB', 'www.rapidtables.com.ico'),
 (33, 'https://p5js.org/reference/', 'p5.js reference', 'p5js.org.ico'),
-(79, 'https://ufa.hh.ru/', 'HeadHunt', 'hh.png'),
 (80, 'https://poufe.ru/', 'по Уфе', 'poufe.ru.ico'),
 (84, 'https://getbootstrap.com/', 'BootStrap', 'bootstrap.png'),
 (85, 'https://www.gismeteo.ru/weather-ufa-4588/', 'Gismeteo', 'gism.ico'),
@@ -271,12 +301,29 @@ INSERT INTO `popular` (`id`, `link`, `name`, `img`) VALUES
 (226, 'https://yandex.ru/internet/', 'Yandex_Speed', 'yandex.ru.png'),
 (227, 'https://www.youtube.com/watch?v=wM4L_yDGqpo&list=PLB4AdipoHpxaHDLIaMdtro1eXnQtl_UvE', 'Laravel_+_admin', 'www.youtube.com.ico'),
 (228, 'https://vk.com/@proglib-podborka-statei-po-data-science', 'Data_analyse', 'vk.com.ico'),
-(229, 'https://www.youtube.com/watch?v=fpD8_fJ2VUA&list=PL9XdPIVgBVVmYWGF3BFZwHu4Fz9fa6GJd', 'Yii2_Russian', 'www.youtube.com.ico');
+(229, 'https://www.youtube.com/watch?v=fpD8_fJ2VUA&list=PL9XdPIVgBVVmYWGF3BFZwHu4Fz9fa6GJd', 'Yii2_Russian', 'www.youtube.com.ico'),
+(230, 'https://ionicframework.com/docs/cli/commands/cordova-resources/', 'Splash_Screen_ionic', 'ionicframework.com.png'),
+(231, 'https://gitguide.readthedocs.io/en/latest/gitguide/', 'Git_popular_command', 'Welcome to Git Guide! — Git Guide  documentation.png'),
+(232, 'http://127.0.0.1/openserver/phpmyadmin/index.php', 'phpMyAdmin', 'phpmyadmin.ico'),
+(233, 'https://xn--80aa0arl6a.xn--p1ai/backend/web/timeline-event/index', 'для_отслеживания', 'Новый сайт успешно создан и готов к работе.png'),
+(234, 'https://forum.ionicframework.com/t/ios-9-cant-play-audio-video-files-that-are-downloaded-to-device/37580', 'ios_options', 'forum.ionicframework.com.png'),
+(235, 'https://www.w3schools.com/cssref/css_selectors.asp', 'Css_selectors', 'www.w3schools.com.ico'),
+(236, 'https://farmer-on.com/apidocs/api.html', 'Api_uber', 'Фермер Онлайн.png'),
+(237, 'https://www.w3schools.com/css/css3_mediaqueries_ex.asp', 'Media_queries', 'www.w3schools.com.ico'),
+(238, 'https://yiiframework.com.ua/ru/doc/guide/2/concept-aliases/', 'Псевдонимы_Yii', 'yiiframework.com.ua.png'),
+(239, 'https://developers.google.com/web/tools/chrome-devtools/console/api', 'Console_API_google', 'developers.google.com.png'),
+(240, 'https://2ality.com/2011/04/ecmascript-5-spec-lexicalenvironment.html', 'Lex_vs_Var_JS', '2ality.com.png'),
+(241, 'https://stackoverflow.com/questions/12756688/is-it-possible-to-send-an-array-with-the-postman-chrome-extension', 'Send_array_Postman', 'stackoverflow.com.43d'),
+(242, 'https://drive.google.com/file/d/0B_IyyodHL4rXcU1BY1R1TzFXbmc/view', 'Manual_XPath', 'Один Диск для всех файлов.png'),
+(243, 'https://docs.google.com/document/d/1W0yYJxFXD_fgy7ZmB2NUkee0Ph3lZNzXH1A8srvxeAc/edit?usp=sharing', 'Интеграция_слак_и_гитлаб', 'Вход – Google Аккаунты.png'),
+(244, 'https://www.amazon.com/TCP-Illustrated-Vol-Addison-Wesley-Professional/dp/0201633469', 'TCP/Ip_illustrated', 'Amazon.com: Online Shopping for Electronics, Apparel, C'),
+(245, 'https://www.leaseweb.com/', 'Хостинг', 'www.leaseweb.com.ico'),
+(246, 'https://github.com/coreybutler/nvm-windows', 'Nvm_for_Windows', 'github.com.ico');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `themes`
+-- Структура таблицы `themes`
 --
 
 CREATE TABLE `themes` (
@@ -285,7 +332,7 @@ CREATE TABLE `themes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `themes`
+-- Дамп данных таблицы `themes`
 --
 
 INSERT INTO `themes` (`id`, `theme`) VALUES
@@ -324,51 +371,61 @@ INSERT INTO `themes` (`id`, `theme`) VALUES
 (34, 'Dev Mozilla'),
 (35, 'DataBases'),
 (36, 'C++'),
-(37, 'Рисование');
+(37, 'Рисование'),
+(38, 'Yii2 Framework'),
+(39, 'Websockets'),
+(40, 'Xpath theme'),
+(41, 'Codeception'),
+(42, 'Electron'),
+(43, 'developer Moz'),
+(44, 'Проблемы с плагином media'),
+(45, 'in-app-purchase'),
+(46, 'background plugin'),
+(47, 'Yarn');
 
 --
--- Indexes for dumped tables
+-- Индексы сохранённых таблиц
 --
 
 --
--- Indexes for table `links`
+-- Индексы таблицы `links`
 --
 ALTER TABLE `links`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `popular`
+-- Индексы таблицы `popular`
 --
 ALTER TABLE `popular`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `themes`
+-- Индексы таблицы `themes`
 --
 ALTER TABLE `themes`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT для сохранённых таблиц
 --
 
 --
--- AUTO_INCREMENT for table `links`
+-- AUTO_INCREMENT для таблицы `links`
 --
 ALTER TABLE `links`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 
 --
--- AUTO_INCREMENT for table `popular`
+-- AUTO_INCREMENT для таблицы `popular`
 --
 ALTER TABLE `popular`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=230;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=247;
 
 --
--- AUTO_INCREMENT for table `themes`
+-- AUTO_INCREMENT для таблицы `themes`
 --
 ALTER TABLE `themes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
